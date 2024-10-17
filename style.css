@@ -1,0 +1,40 @@
+body {
+    background-color: #f8f9fa;
+}
+
+h1 {
+    color: #007bff;
+    margin-bottom: 30px;
+}
+
+.table-responsive {
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+form {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+}
+
+button {
+    margin-top: 20px;
+}
+
+.chart-container {
+    width: 10%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+

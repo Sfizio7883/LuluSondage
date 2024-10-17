@@ -1,0 +1,252 @@
+Question 1: Êtes-vous âgé de :
+- Moins de 20 ans
+- 20 à 30 ans
+- 30 à 45 ans
+- 45 à 60 ans
+- Plus de 60 ans
+
+Question 2: Dans quelle ville habitez-vous ?
+
+Question 3: De combien de personne se compose votre foyer (vous inclus) ?
+- Une personne
+- Deux personnes
+- Trois personnes
+- Plus de quatre personnes
+
+Question 4: Quel type de soins dermo-cosmétiques, utilisez-vous le plus souvent ? (Vous pouvez cocher plusieurs réponses)
+- Soin anti-âges
+- Soin visage hydratant
+- Soin visage matifiant
+- Soin visage éclaircissant
+- Soin visage anti-imperfection
+- Soin capillaire
+- Soin corps
+- Maquillage (Fond de teint, Poudre, BB crème, CC crème, …)
+- Soin solaire
+- Autres
+
+Question 5: En moyenne, quel budget consacrez-vous chaque mois à l’achat de produits dermo-cosmétiques ?
+- Moins de 15€ par mois
+- Entre 15€ et 30€ par mois
+- Plus de 30€ par mois
+
+Question 6: À quelle fréquence achetez-vous des produits de soin dermo-cosmétique ?
+- Plusieurs fois par semaine
+- Tous les semaines
+- Tous les mois
+- 1 fois par trimestre
+- Occasionnellement
+
+Question 7: Où effectuez-vous le plus souvent vos achats de produits de soins dermo-cosmétiques ?
+- Pharmacie
+- Parapharmacie
+- Parfumerie
+- Grandes surfaces
+- Internet
+- Autres
+
+Question 8: Quelles sont vos critères d’achat par rapport à un produit de soin ? (Vous pouvez cocher plusieurs réponses)
+- Sa marque
+- Son packaging
+- Sa composition
+- Son parfum
+- Sa texture
+- Sa rapidité d’application
+- Son prix
+- Autres
+
+Question 9: Quelles marques de produits dermo-cosmétiques achetez-vous en pharmacie (ou/et en parapharmacie) ?
+
+Question 10: Notre pharmacie vous propose-t-elle les marques et les produits dermo-cosmétiques que vous recherchez ?
+- Oui
+- Non, lesquelles ?
+
+Question 11: Estimez-vous que les prix de nos produits dermo-cosmétiques sont :
+- Très compétitifs
+- Élevés
+- Dans la moyenne des prix généralement pratiqués
+
+Question 12: Par rapport à l’agencement du rayon dermo-cosmétiques, vous est-il facile de trouver les produits que vous recherchez ?
+- Oui
+- Non
+
+Question 13: Avez-vous eu l’occasion de nous demander conseil dans le domaine dermo-cosmétique ou dermatologique ?
+- Oui : Dans ce cas, avez-vous été satisfait de notre conseil ?
+- Non
+
+Question 14: Souhaiteriez-vous assister à une animation / mise en avant d’une gamme dermo-cosmétique ?
+- Oui : Sur quelle gamme ?
+- Non
+
+
+[{"q1":"Moins de 20 ans","q2":"Hazebrouck","q3":"Deux personnes","q4":[],"q5":"","q6":"","q7":"","q8":"","q9":"","q10":"","q11":"","q12":"","q13":"","q14":""},{"q1":"20 à 30 ans","q2":"Montreal","q3":"Trois personnes","q4":["Soin solaire"],"q5":"Rarement","q6":"Composition naturelle","q7":"Grande surface","q8":"Oui","q9":"Moins souvent","q10":"","q11":"Moins de 20 €","q12":"","q13":"Peur des coups de soleil","q14":""}]
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire Dermo-Cosmétiques</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-4">
+        <h2>Formulaire Dermo-Cosmétiques</h2>
+        <form id="survey-form" class="mt-4">
+            <!-- Question 1 -->
+            <div class="mb-3">
+                <label for="q1" class="form-label">Êtes-vous âgé de :</label>
+                <select class="form-select" id="q1" name="q1">
+                    <option>Moins de 20 ans</option>
+                    <option>20 à 30 ans</option>
+                    <option>30 à 45 ans</option>
+                    <option>45 à 60 ans</option>
+                    <option>Plus de 60 ans</option>
+                </select>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="mb-3">
+                <label for="q2" class="form-label">Dans quelle ville habitez-vous ?</label>
+                <input type="text" class="form-control" id="q2" name="q2">
+            </div>
+
+            <!-- Question 3 -->
+            <div class="mb-3">
+                <label for="q3" class="form-label">De combien de personnes se compose votre foyer (vous inclus) ?</label>
+                <select class="form-select" id="q3" name="q3">
+                    <option>Une personne</option>
+                    <option>Deux personnes</option>
+                    <option>Trois personnes</option>
+                    <option>Plus de quatre personnes</option>
+                </select>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="mb-3">
+                <label for="q4" class="form-label">Quel type de soins dermo-cosmétiques, utilisez-vous le plus souvent ? (Vous pouvez cocher plusieurs réponses)</label>
+                <div>
+                    <input type="checkbox" name="q4" value="Soin anti-âges"> Soin anti-âges<br>
+                    <input type="checkbox" name="q4" value="Soin visage hydratant"> Soin visage hydratant<br>
+                    <input type="checkbox" name="q4" value="Soin visage matifiant"> Soin visage matifiant<br>
+                    <input type="checkbox" name="q4" value="Soin visage éclaircissant"> Soin visage éclaircissant<br>
+                    <input type="checkbox" name="q4" value="Soin visage anti-imperfection"> Soin visage anti-imperfection<br>
+                    <input type="checkbox" name="q4" value="Soin capillaire"> Soin capillaire<br>
+                    <input type="checkbox" name="q4" value="Soin corps"> Soin corps<br>
+                    <input type="checkbox" name="q4" value="Maquillage"> Maquillage (Fond de teint, Poudre, BB crème, CC crème, …)<br>
+                    <input type="checkbox" name="q4" value="Soin solaire"> Soin solaire<br>
+                    <input type="checkbox" name="q4" value="Autres"> Autres<br>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="mb-3">
+                <label for="q5" class="form-label">En moyenne, quel budget consacrez-vous chaque mois à l’achat de produits dermo-cosmétiques ?</label>
+                <select class="form-select" id="q5" name="q5">
+                    <option>Moins de 15€ par mois</option>
+                    <option>Entre 15€ et 30€ par mois</option>
+                    <option>Plus de 30€ par mois</option>
+                </select>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="mb-3">
+                <label for="q6" class="form-label">À quelle fréquence achetez-vous des produits de soin dermo-cosmétique ?</label>
+                <select class="form-select" id="q6" name="q6">
+                    <option>Plusieurs fois par semaine</option>
+                    <option>Toutes les semaines</option>
+                    <option>Tous les mois</option>
+                    <option>1 fois par trimestre</option>
+                    <option>Occasionnellement</option>
+                </select>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="mb-3">
+                <label for="q7" class="form-label">Où effectuez-vous le plus souvent vos achats de produits de soins dermo-cosmétiques ?</label>
+                <select class="form-select" id="q7" name="q7">
+                    <option>Pharmacie</option>
+                    <option>Parapharmacie</option>
+                    <option>Parfumerie</option>
+                    <option>Grandes surfaces</option>
+                    <option>Internet</option>
+                    <option>Autres</option>
+                </select>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="mb-3">
+                <label for="q8" class="form-label">Quels sont vos critères d’achat par rapport à un produit de soin ? (Vous pouvez cocher plusieurs réponses)</label>
+                <div>
+                    <input type="checkbox" name="q8" value="Sa marque"> Sa marque<br>
+                    <input type="checkbox" name="q8" value="Son packaging"> Son packaging<br>
+                    <input type="checkbox" name="q8" value="Sa composition"> Sa composition<br>
+                    <input type="checkbox" name="q8" value="Son parfum"> Son parfum<br>
+                    <input type="checkbox" name="q8" value="Sa texture"> Sa texture<br>
+                    <input type="checkbox" name="q8" value="Sa rapidité d’application"> Sa rapidité d’application<br>
+                    <input type="checkbox" name="q8" value="Son prix"> Son prix<br>
+                    <input type="checkbox" name="q8" value="Autres"> Autres<br>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="mb-3">
+                <label for="q9" class="form-label">Quelles marques de produits dermo-cosmétiques achetez-vous en pharmacie (ou/et en parapharmacie) ?</label>
+                <input type="text" class="form-control" id="q9" name="q9">
+            </div>
+
+            <!-- Question 10 -->
+            <div class="mb-3">
+                <label for="q10" class="form-label">Notre pharmacie vous propose-t-elle les marques et les produits dermo-cosmétiques que vous recherchez ?</label>
+                <select class="form-select" id="q10" name="q10">
+                    <option>Oui</option>
+                    <option>Non, lesquelles ?</option>
+                </select>
+            </div>
+
+            <!-- Question 11 -->
+            <div class="mb-3">
+                <label for="q11" class="form-label">Estimez-vous que les prix de nos produits dermo-cosmétiques sont :</label>
+                <select class="form-select" id="q11" name="q11">
+                    <option>Très compétitifs</option>
+                    <option>Élevés</option>
+                    <option>Dans la moyenne des prix généralement pratiqués</option>
+                </select>
+            </div>
+
+            <!-- Question 12 -->
+            <div class="mb-3">
+                <label for="q12" class="form-label">Par rapport à l’agencement du rayon dermo-cosmétiques, vous est-il facile de trouver les produits que vous recherchez ?</label>
+                <select class="form-select" id="q12" name="q12">
+                    <option>Oui</option>
+                    <option>Non</option>
+                </select>
+            </div>
+
+            <!-- Question 13 -->
+            <div class="mb-3">
+                <label for="q13" class="form-label">Avez-vous eu l’occasion de nous demander conseil dans le domaine dermo-cosmétique ou dermatologique ?</label>
+                <select class="form-select" id="q13" name="q13">
+                    <option>Oui : Dans ce cas, avez-vous été satisfait de notre conseil ?</option>
+                    <option>Non</option>
+                </select>
+            </div>
+
+            <!-- Question 14 -->
+            <div class="mb-3">
+                <label for="q14" class="form-label">Souhaiteriez-vous assister à une animation / mise en avant d’une gamme dermo-cosmétique ?</label>
+                <select class="form-select" id="q14" name="q14">
+                    <option>Oui : Sur quelle gamme ?</option>
+                    <option>Non</option>
+                </select>
+            </div>
+
+            <div class="mt-4">
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
